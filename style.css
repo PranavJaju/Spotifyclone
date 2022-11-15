@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+  padding: 0px 14px ;
+  font-family:'Ubuntu', sans-serif;;
+}
+.brand img{
+    max-height: 44px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Varela', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white;
+    padding: 0px 8px;
+    
+
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    margin: 27px auto;
+    padding: 5px 10px;
+    width: 70%;
+    border-radius: 15px;
+    background-image: url(Images/bg.jpg);
+    background-size: cover;
+}
+#myprogessbar{
+    min-width: 80vw;
+}
+.bottom{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    bottom: 0;
+    background-color: black;
+    color: aliceblue;
+    flex-direction: column;
+}
+.icons{
+    padding-top: 10px;
+    cursor: pointer;
+}
+i{
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.songitem{
+    height: 50px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 6px;
+    justify-content: space-between;
+    
+}
+.songitem:hover{
+    /* scale: 1.1; */
+    border-color: aliceblue;
+    cursor: pointer;
+}
+.songitem img{
+    max-height: 44px;
+    padding-left: 15px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+.songlistplay{
+    padding-left: 150px;
+    float: right;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.songInfo{
+    padding-top:5px ; 
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
